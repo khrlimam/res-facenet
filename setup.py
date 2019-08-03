@@ -4,7 +4,7 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='res-facenet',
+    name='res-facenet-khairulimam',
     version='0.0.1',
     author='Khairul Imam',
     author_email='ki65559@gmail.com',
@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/khrlimam/res-facenet",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages().extend(['torch', 'torchvision']),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
