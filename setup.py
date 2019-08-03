@@ -4,7 +4,7 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='res-facenet-khairulimam',
+    name='facenet-khairulimam',
     version='0.0.1',
     author='Khairul Imam',
     author_email='ki65559@gmail.com',
