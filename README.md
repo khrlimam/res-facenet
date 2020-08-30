@@ -38,7 +38,7 @@ img1 = trfrm(Image.open(img1_path)).unsqueeze(0)
 img2 = trfrm(Image.open(img2_path)).unsqueeze(0)
 
 # do forward pass
-embed1, embed2 = model920(a), model920(b)
+embed1, embed2 = model920(img1), model920(img2)
 
 # compute the distance using euclidean distance of image embeddings
 euclidean_distance = F.pairwise_distance(embed1, embed2)
