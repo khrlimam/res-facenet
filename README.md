@@ -43,7 +43,7 @@ embed1, embed2 = model920(a), model920(b)
 # compute the distance using euclidean distance of image embeddings
 euclidean_distance = F.pairwise_distance(embed1, embed2)
 
-# we use 1.5 threshold to decide wether images are genuine or impostor
+# we use 1.5 threshold to decide whether images are genuine or impostor
 
 threshold = 1.5
 
