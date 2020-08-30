@@ -20,6 +20,8 @@ model921 = model_921()
  ```python
  
 import torch.nn.functional as F
+from torchvision import transforms
+from PIL import Image
  
 #prepare preprocess pipeline
 preprocess_pipelines = [transforms.Resize(224), 
