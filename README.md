@@ -41,13 +41,13 @@ img2 = trfrm(Image.open(img2_path)).unsqueeze(0)
 embed1, embed2 = model920(img1), model920(img2)
 
 # compute the distance using euclidean distance of image embeddings
-euclidean_distance = F.pairwise_distance(embed1, embed2)
+distance = F.pairwise_distance(embed1, embed2)
 
 # we use 1.5 threshold to decide whether images are genuine or impostor
 
 threshold = 1.5
 
-genuine = destance <= threshold
+genuine = distance <= threshold
 
  ```
  
